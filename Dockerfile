@@ -14,7 +14,7 @@ RUN apk del .tmp-build-deps
 # directory to store app code - also to share with other containers, i.e nginx or a webserver that needed to serve these media files
 RUN mkdir /app
 WORKDIR /app
-COPY ./app /app
+COPY . /app
 # create directory to save media
 # RUN mkdir -p /vol/web/media
 # RUN mkdir -p /vol/web/static
